@@ -4,6 +4,7 @@ from hashlib import md5
 def store_files(username,user_file):
 	f = open(user_file,'rb')
 	data = user_file.read()
+	
 	f.close()
 	try:
 		os.mkdir("User Files")
