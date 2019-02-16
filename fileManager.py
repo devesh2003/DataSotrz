@@ -13,7 +13,7 @@ def store_files(username,user_file):
 		os.mkdir("User Files")
 		os.chdir("User Files")
 
-	file_name = md5(username.encode("utf-8")).hexdigest()		
+	file_name = md5(username.encode("utf-8")).hexdigest()
 	out_file = open(str(file_name),'wb')
 	out_file.write(data)
 	out_file.close()
